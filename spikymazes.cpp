@@ -31,10 +31,12 @@ bool findTreasure(pair<int, int> curr, pair<int, int> begin, pair<int, int> trea
     if (tab[curr.first][curr.second] == 'P' && found == 1) {
         (*life)--;
     }
+   
+   
     
     if ((*life) < 0)
         return false;
-    //printar o tabuleiro para rastrear
+  // conseguiu voltar
     char aux = tab[curr.first][curr.second]; 
     tab[curr.first][curr.second] = 'C';
     //printTab(rows, width, tab); 
