@@ -94,8 +94,8 @@ int main () {
       }
       printList(text);
     }
-      freeList(text);
-      text = createList(); 
+    
+    text = createList(); 
   }
   freeList(text);
   return 0;
